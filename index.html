@@ -3,27 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Website</title>
+    <title>Optimarch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to My Basic Website</h1>
-    <p>This is a simple HTML, CSS, and JavaScript starter page.</p>
-    <button id="clickMeBtn">Click Me!</button>
-    <p id="message"></p>
-    <div id="vanta"></div>
+    <div id="vanta">
+        <h1 id="business-name">Optimarch.</h1>
+        <h2 id="mission-statement">Seamlessly integrate AI automations into your workflows for smarter, faster, and more scalable systems.</h2>
+    </div>
+    <div class="main-content">
+        <h1>Welcome to My Basic Website</h1>
+        <p>This is a simple HTML, CSS, and JavaScript starter page.</p>
+        <button id="clickMeBtn">Click Me!</button>
+        <p id="message"></p>
+    </div>
     <script src="script.js"></script>
     <script src="three.r134.min.js"></script>
     <script src="vanta.halo.min.js"></script>
     <script>
         VANTA.HALO({
             el: "#vanta",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            backgroundColor: 0x101018,
+            amplitudeFactor: 1.20,
+            xOffset: 0.20,
+            size: 1.20
         });
-</script>
+    </script>
 </body>
 </html>
