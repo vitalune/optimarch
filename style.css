@@ -28,3 +28,7 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+div {
+  width: 600px; height: 360px; margin-bottom: 10px;
+}
